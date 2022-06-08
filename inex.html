@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html >
+<head>
+    <meta charset="UTF-8">
+</head>
+<body onload="assignFunctionToCheckboxes();">
+    <script src="script.js"></script>
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <h3>Приклад 1</h3>
+    <form>
+
+        <table>
+        
+        <tr>
+        
+        <td>
+        
+        Введіть пароль:
+        
+        </td>
+        
+        <td>
+        
+        <input type="password" id="pwd1" onkeyup="editPassword(this.id,'message',8,16);">
+        
+        </td>
+        
+        <td>
+        
+        <font id="message" style="font-size: 8pt;"></font>
+        
+        </td>
+        
+        </tr>
+        
+        </table>
+        
+        </form>
+
+    <h3>Приклад 2</h3>
+    <img src="kozak.jpg" id="kozak" alt="Workplace" usemap="#workmap" width="200" height="175">
+    <map name="workmap">
+    <area shape="poly" coords="0,5,50,50,100,25" href="zavd_1.html"> (область трикутна з вершинами у точках (0,5), (10,10) та (20,5))
+    </map>
+    <button onclick="zoomMap(2,'kozak')">Збільшити</button>
+    <h3>Приклад 3</h3>
+    <select onchange="showStreets(this.selectedIndex,'streets');">
+
+        <option>Виберіть район</option>
+        
+        <option>Галицький</option>
+        
+        <option>Франківський</option>
+        
+        <option>Личаківський</option>
+        
+        <option>Сихівський</option>
+        
+        <option>Шевченківський</option>
+        
+        </option>
+        
+        <select>
+        
+        Вулиці:
+        
+        <select id='streets' style='visibility:hidden;'>    
+        
+        <option></option>
+        
+        <select>
+        <h3>Приклад 4</h3>
+        <table border="1" cellspacing="0" cellpadding="5" bordercolor="#000000">
+
+            <tr>
+            
+            <td></td>
+            
+            <td>Назва товару</td>
+            
+            <td>Виробник</td>
+            
+            <td>Ціна</td>
+            
+            </tr>
+            
+            <tr>
+            
+            <td><input type="checkbox" name="goods" value="98"></td>
+            
+            <td>Монітори CRT</td><td>LG</td><td>98</td>
+            
+            </tr>
+            
+            <tr>
+            
+            <td><input type="checkbox" name="goods" value="132"></td>
+            
+            <td>Монітори CRT</td><td>Samsung</td><td>132</td>
+            
+            </tr>
+            
+            <tr>
+            
+            <td><input type="checkbox" name="goods" value="419"></td>
+            
+            <td>Монітори TFT</td><td>Samsung</td><td>419</td>
+            
+            </tr>
+            
+            <tr>
+            
+            <td><input type="checkbox" name="goods" value="68"></td>
+            
+            <td>HDD</td><td>Seagate</td><td>68</td>
+            
+            </tr>
+            
+            <tr>
+            
+            <td><input type="checkbox" name="goods" value="161"></td>
+            
+            <td>HDD</td><td>Hitachi</td><td>161</td>
+            
+            </tr>
+            
+            <tr>
+            
+            <td><input type="checkbox" name="goods" value="14"></td>
+            
+            <td>CD ROM</td><td>LG</td><td>14</td>
+            
+            </tr>
+            
+            <tr>
+            
+            <td><input type="checkbox" name="goods" value="16"></td>
+            
+            <td>CD ROM</td><td>Asus</td><td>16</td>
+            
+            </tr>
+            
+            <tr>
+            
+            <td><input type="checkbox" name="goods" value="32"></td>
+            
+            <td>DVD ROM</td><td>Toshiba</td><td>32</td>
+            
+            </tr>
+            
+            <tr>
+            
+            <td colspan="4" align="center">Сума:&nbsp;<font
+            
+            id="price"></font></td>
+            
+            </tr>
+            
+            </table>
+            <hr>
+        <div class="zavd-1">
+            <div class="text-zavd">
+                <p>Оголосіть випадаючий список з десятьох елементів та кнопку. Якщо у списку вибрано якийсь елемент, <br>відмінний від першого (не елемент з індексом 0), кнопка має бути активною, а інакше – неактивною</p>
+            </div>
+            <div class="button-1">
+                <a href="zavd_1.html">Перейти</a>
+                
+            </div>
+        </div>
+        <hr>
+        <div class="zavd-2">
+            <div class="text-zavd">
+                <p>Доробіть розглянутий приклад 2 таким чином. Додайте у список районів пункт «Всі райони». При виборі цього пункту повинні відобразитися вулиці всіх районів.</p>
+            </div>
+            <div class="button-1">
+                <a href="zavd_2.html">Перейти</a>
+                
+            </div>
+        </div>
+        <hr>
+        <div class="zavd-3">
+            <div class="text-zavd">
+                <p>Оголосіть групу з десяти прапорців. Якщо користувач відмітить менше 5 прапорців, повинно появитися повідомлення (виконане червоним шрифтом) про те, що вибрано замало прапорців.</p>
+            </div>
+            <div class="button-1">
+                <a href="zavd_3.html">Перейти</a>
+                
+            </div>
+        </div>
+</body>
+</html>

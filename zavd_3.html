@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    
+</head>
+<body onload="assignFunctionToCheckboxes();">
+    <input type="checkbox" name="goods">
+    <input type="checkbox" name="goods">
+    <input type="checkbox" name="goods">
+    <input type="checkbox" name="goods">
+    <input type="checkbox" name="goods">
+    <input type="checkbox" name="goods">
+    <input type="checkbox" name="goods">
+    <input type="checkbox" name="goods">
+    <input type="checkbox" name="goods">
+    <input type="checkbox" name="goods">
+    <br>
+    <font id="message" style="font-size: 20pt;"></font>
+    <script>
+        function getTotal(){
+            var sum=0;
+            var boxes = document.getElementsByName('goods');
+            for(var i = 0; i < boxes.length; i++)
+            if(boxes[i].checked)
+            sum++;
+            if(sum<5){
+                message.innerText = 'Вибрано замало прапорців';
+                message.style.color = '#ff0000';
+            }
+            else
+            {
+                message.innerText = 'Ok';
+
+                message.style.color = '#00cc00';
+            }
+        
+        }
+        function assignFunctionToCheckboxes() {
+
+var boxes = document.getElementsByName('goods'); 
+
+for(var i = 0; i < boxes.length; i++) 
+
+boxes[i].onclick = getTotal; 
+
+}
+    </script>
+</body>
+</html>

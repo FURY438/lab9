@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    
+</head>
+<body>
+   
+    <select onchange="function_1(this.selectedIndex);">
+
+        <option>Виберіть місто</option>
+        <option>Теребовля</option>
+        <option>Тернопіль</option>       
+        <option>Львів</option>      
+        <option>Київ</option>        
+        <option>Івано-Франківськ</option>
+        <option>Чернівці</option>
+        <option>Рівне</option>
+        <option>Одеса</option>
+        <option>Херсон</option>
+        
+        </option>
+        
+    </select>
+            <button  id="button"  >Вибрати</button>
+            
+            <script>
+                function function_1(cityIndex){
+        
+        const button = document.querySelector('#button');
+        if(cityIndex!=0){
+            button.disabled = false;
+        }
+        else
+        button.disabled = true;
+        return 
+        
+    }
+            </script>
+            
+</body>
+</html>
